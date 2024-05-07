@@ -1,0 +1,17 @@
+{
+  "name": "quizapp-backend",
+  "version": "1.0.0",
+  "description": "Backend for Quiz App built with express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Dinesh T",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^9.0.1"
+  }
+}
