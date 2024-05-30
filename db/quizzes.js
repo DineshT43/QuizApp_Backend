@@ -1,27 +1,27 @@
-const { v4 : uuid } = require("uuid");
+const { v4: uuid } = require("uuid")
 
 const quizzes = {
     data: [
-        // 1st quiz card --> will have title, category, description, quiz
+        // 1st Quiz Card --> will have title, category, description, quiz,
         {
             id: uuid(),
             category: "marvel",
             image: "https://parade.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTkwNTgwOTkzMTk0MDc1MjYx/marvel-quiz-copy.webp",
             title: "Marvel",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil, eum asperiores eveniet cul",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique quis nunc eget rutrum",
             quiz: [
-                // 1st question
+                //1st question and options
                 {
                     id: uuid(),
                     question: "Black Panther is set in which fictional country?",
                     options: [
                         { id: uuid(), option: "Wakanda", isCorrect: true },
-                        { id: uuid(), option: "Zakanda", isCorrect: false },
                         { id: uuid(), option: "Takanda", isCorrect: false },
-                        { id: uuid(), option: "Jakanda", isCorrect: false },
+                        { id: uuid(), option: "Zakanda", isCorrect: false },
+                        { id: uuid(), option: "Jakanda", isCorrect: false }
                     ]
                 },
-                // 2nd question
+                //2nd question and options
                 {
                     id: uuid(),
                     question: "Who rescued Tony Stark and Nebula from space?",
@@ -32,6 +32,7 @@ const quizzes = {
                         { id: uuid(), option: "Hulk", isCorrect: false }
                     ]
                 },
+                //3rd question and options
                 {
                     id: uuid(),
                     question: "Thor's Mjolnir is made from the metal of a dying ___?",
@@ -42,7 +43,7 @@ const quizzes = {
                         { id: uuid(), option: "Sun", isCorrect: false }
                     ]
                 },
-                // 4th question
+                //4th question and options
                 {
                     id: uuid(),
                     question: "What did Thor say about Jane Foster's catchphrase?",
@@ -52,20 +53,20 @@ const quizzes = {
                         { id: uuid(), option: "What ever", isCorrect: false },
                         { id: uuid(), option: "It's perfect", isCorrect: true }
                     ]
-                }
+                },
             ]
         },
-        // 2nd quiz
+        //2nd quiz
         {
             id: uuid(),
             category: "dc",
             image: "https://media.proprofs.com/images/QM/user_images/2503852/New%20Project%20(56)(110).jpg",
             title: "DC",
-            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quisquam modi ullam eli",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique quis nunc eget rutrum",
             quiz: [
                 {
                     id: uuid(),
-                    question: "What was Wonder Woman originally named ?",
+                    question: "What was Wonder Woman originally named?",
                     options: [
                         { id: uuid(), option: "Anita", isCorrect: false },
                         { id: uuid(), option: "Suprema", isCorrect: true },
@@ -102,9 +103,10 @@ const quizzes = {
                         { id: uuid(), option: "One seconds", isCorrect: false },
                         { id: uuid(), option: "One and a half seconds", isCorrect: false }
                     ]
-                }
+                },
             ]
-        }
+        },
+
     ]
 }
 
