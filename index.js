@@ -8,7 +8,6 @@ const routeNotfound = require("./middleware/routeNotFound");
 const quizzes = require("./db/quizzes");
 
 
-
 const app = express();
 app.use(cors());
 app.use(express.json());
